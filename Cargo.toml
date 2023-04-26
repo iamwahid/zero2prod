@@ -13,6 +13,7 @@ path = "src/main.rs"
 name = "zero2prod"
 
 [dependencies]
+tracing-actix-web = "0.5"
 secrecy = { version = "0.8", features = ["serde"] }
 tracing-log = "0.1"
 actix-web = "4"
@@ -34,7 +35,8 @@ features = [
     "postgres",
     "uuid",
     "chrono",
-    "migrate"
+    "migrate",
+    "offline"
 ]
 
 [dev-dependencies]
